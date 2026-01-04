@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex Center + Auto Practice </title>
+  <style>
+    /* 1) Flexbox: justify-content + align-items */
+    .flex-center-box {
+      display: flex;
+      justify-content: center;   /* main axis e center */
+      align-items: center;       /* cross axis e center */
+      height: 400px;
+      background-color: lightgray;
+      border: 2px solid black;
+      margin-bottom: 30px;
+    }
+
+    .flex-center-box .item {
+      background-color: teal;
+      color: white;
+      padding: 30px 45px;
+      font-size: 24px;
+    }
+
+    /* 2) Flexbox + margin: auto */
+    .flex-margin-box {
+      display: flex;
+      height: 400px;
+      background-color: lightgray;
+      border: 2px solid black;
+    }
+
+    .flex-margin-box .item {
+      margin: auto;              /* 4 diker margin auto -> pure center */
+      background-color: purple;
+      color: white;
+      padding: 30px 45px;
+      font-size: 24px;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Flex Center</h1>
+
+  <!-- 1) Horizontal + vertical center with justify-content & align-items -->
+  <h2>Center with justify-content + align-items</h2>
+
+  <div class="flex-center-box">
+    <div class="item">Centered with Flex (justify + align)</div>
+  </div>
+
+  <!-- 2) Horizontal + vertical center with margin: auto -->
+
+  <h2>Center with margin: auto in Flex</h2>
+  <div class="flex-margin-box">
+    <div class="item">Centered with margin: auto</div>
+  </div>
+
+</body>
+</html>
