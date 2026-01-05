@@ -1,0 +1,42 @@
+body{
+    max-width: 1270px;
+    /* background-color: bisque; */
+    margin: 0 auto;
+}
+
+.card-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card{
+    width: 300px;
+    text-align: left;
+    border:2px solid sandybrown;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(11, 10, 10);
+}
+.card:hover{
+    background-color: rgba(144, 238, 144, 0.893);
+}
+.card h3{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button{
+    background-color: aqua;
+    padding: 10px 30px;
+    font-size: 1.25em;
+    border-radius: 10px;
+    cursor: pointer;
+}
